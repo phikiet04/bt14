@@ -17,6 +17,10 @@ const BookEdit = ({book, onEdit}) => {
     });
 
   }
+  const handleCancel =(e)=>{
+    setTitle(book.title)
+    setDes(book.desc)
+  }
   return (
     <div className="edit-form">
       <h3>Edit a book</h3>
@@ -43,7 +47,7 @@ const BookEdit = ({book, onEdit}) => {
         </div>
         <div className="form-group d-flex">
           <input className="w-45"  type="submit" value="Save" />
-          <button className="w-45">Cancel</button>
+          <button className="w-45"onClick={handleCancel}>Cancel</button>
         </div>
       </form>
     </div>

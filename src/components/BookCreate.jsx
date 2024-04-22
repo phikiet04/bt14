@@ -13,8 +13,8 @@ const BookCreate = ({onCreate}) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const reps = await onCreate
-    ({ title: title,
-        desc: desc,
+    ({ title,
+        desc,
       })
 
   };
